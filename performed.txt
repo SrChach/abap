@@ -1,0 +1,5 @@
+NOTE: check object SE24/ZCL_TREX_JSON_SERIALIZER->ZSERIALIZE
+
+list of sap programs/services done:
+
+2018-05-24:	{ SICF/default_hosts/sap/bc/ZDEMO_SERVICE, SE24/ZCL_DEMO_SERVI_HANDLER }
