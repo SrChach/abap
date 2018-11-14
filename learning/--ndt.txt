@@ -1,0 +1,65 @@
+*/1BCDWB/SAPLSF00000545
+*Me encanta cuando las grandes compañías de software me dan cosas con las que jugar
+
+
+*PROGRAMA OLVIDADO 1
+*TABLES trdir.
+*PARAMETERS:
+*      p_ape1 TYPE c LENGTH 20,
+*      p_ape2 TYPE c LENGTH 20,
+*      p_nombre TYPE c LENGTH 30
+*.
+*
+*SELECTION-SCREEN skip.
+*PARAMETERS:
+*      fechaN TYPE datum,
+*      p_dni TYPE c LENGTH 15,
+*      p_domici TYPE c LENGTH 50,
+*      p_email TYPE c LENGTH 30
+*.
+*
+*SELECTION-SCREEN skip.
+*PARAMETERS:
+*      p_cntr_i RADIOBUTTON GROUP cntr,
+*      p_cntr_t RADIOBUTTON GROUP cntr DEFAULT 'X',
+*      p_cntr_p RADIOBUTTON GROUP cntr
+*.
+*
+*SELECTION-SCREEN skip.
+*PARAMETERS:
+*      p_tick_r TYPE c AS CHECKBOX,
+*      p_tick_m TYPE c AS CHECKBOX,
+*      p_tick_p TYPE c AS CHECKBOX,
+*      p_horas TYPE i, " Horas semanales
+*      p_sal_m TYPE i  " Salario Mensual
+*.
+*
+*PARAMETERS: p_fechaa TYPE sydatum.
+*
+*SELECTION-SCREEN skip.
+*SELECT-OPTIONS s_prog FOR trdir-name.
+*START-OF-SELECTION.
+*  WRITE 'FIN'.
+
+*Programa olvidado 2
+*data:
+*    begin of itab occurs 0,
+*          str type string,
+*    end of itab
+*.
+*
+*itab-str = '1 Record'. append itab.
+*itab-str = '2 Record'. append itab.
+*itab-str = '3 Record'. append itab.
+*itab-str = '4 Record'. append itab.
+*itab-str = '5 Record'. append itab.
+*itab-str = '6 Record'. append itab.
+*itab-str = '7 Record'. append itab.
+*itab-str = '8 Record'. append itab.
+*itab-str = '9 Record'. append itab.
+*
+*read table itab index 2.
+*
+*check sy-subrc = 0.
+*write:/ itab-str.
+
